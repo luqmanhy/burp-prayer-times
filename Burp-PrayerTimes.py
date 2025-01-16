@@ -260,6 +260,7 @@ class BurpExtender(IBurpExtender, IExtensionStateListener, ITab):
         if event != None :
             self.save_config() 
             self.lat, self.lon = self.get_lat_lon()
+            self.prayer_times = None
 
         today = datetime.datetime.now().date()
         today_formatted_date = today.strftime("%d-%m-%Y")
